@@ -32,5 +32,10 @@ Para lidar com os e-mails de suporte que o projeto começou a receber, implement
 * **Jira API:** Abertura automática de cards de suporte no Jira apenas quando os dados técnicos estão completos.
 
 ---
+## 🌐 O Projeto em Produção
+O que começou como um laboratório de estudos tomou forma e hoje está em produção. Você pode conferir o resultado final da aplicação rodando na nuvem através dos links abaixo:
+
+* **Site Oficial:** [Acesse o VenttoApp](https://www.venttoapp.com.br)
+* **Instagram:** [@seu.instagram.aqui](https://www.instagram.com/venttoapp)
 
 Estou em constante transição e aprofundamento nos estudos de engenharia de dados e desenvolvimento backend. Construir o VenttoApp foi a melhor forma que encontrei de sair da teoria e colocar a mão na massa com problemas reais de infraestrutura, banco de dados e automação.
