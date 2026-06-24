@@ -32,6 +32,21 @@ Para lidar com os e-mails de suporte que o projeto começou a receber, implement
 * **Jira API:** Abertura automática de cards de suporte no Jira apenas quando os dados técnicos estão completos.
 
 ---
+## ⚙️ Operação e Monitoramento Contínuo (Data Observability)
+
+O código-fonte oficial da API do Ventto é mantido em um repositório privado. Um pipeline analítico confiável depende diretamente da saúde e da integridade do ambiente transacional (OLTP) que gera a informação.
+
+Por isso, utilizo a aba **[Issues](https://github.com/augustocrsouza/venttoapp-portfolio/issues/)** deste repositório público como um **Diário de Engenharia (Ops Log)**. É aqui que documento ativamente a minha rotina de estudo para sustentação real do sistema em produção na AWS, garantindo a qualidade do dado na origem.
+
+### 🏷️ Dicionário de Operações (Labels)
+Para organizar o histórico de monitoramento e facilitar a leitura da saúde da infraestrutura, utilizo as seguintes classificações nas *Issues*:
+
+* 🔵 **`ops-log` (Health Checks e Rotina):** Registros de auditoria preventiva. Inclui a verificação periódica de uso de disco (EC2), consumo de memória dos contêineres (Docker), estabilidade de conexões do banco de dados (RDS PostgreSQL) e validação de políticas de retenção de backup (Disaster Recovery).
+* 🔴 **`incident` (Falhas e Indisponibilidades):** Registro de anomalias reais ocorridas em produção. Documenta quedas de serviço, picos anormais de infraestrutura ou falhas de *deploy* que possam impactar a geração ou integridade dos dados.
+* 🟣 **`post-mortem` (Análise de Causa Raiz - RCA):** Documentação técnica detalhada após a resolução de um incidente. Descreve o que falhou, por que falhou (analisando os logs da aplicação) e qual o plano de ação implementado na arquitetura para evitar que o problema volte a corromper o fluxo de informações.
+
+Convido você a explorar o histórico de *Issues* para acompanhar a evolução e a manutenção contínua desta arquitetura.
+---
 ## 🌐 O Projeto em Produção
 O que começou como um laboratório de estudos tomou forma e hoje está em produção. Você pode conferir o resultado final da aplicação rodando na nuvem através dos links abaixo:
 
